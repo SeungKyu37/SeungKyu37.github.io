@@ -120,6 +120,118 @@
 
 
   
+    <article id="post-2022/12/Git hub blog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/12/21/2022/12/Git%20hub%20blog/" class="article-date">
+  <time class="dt-published" datetime="2022-12-21T01:00:00.000Z" itemprop="datePublished">2022-12-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Git/">Git</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/12/21/2022/12/Git%20hub%20blog/">깃허브 블로그 만들기(hexo 이용)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Git-hub-blog-hexo"><a href="#Git-hub-blog-hexo" class="headerlink" title="Git hub blog - hexo"></a>Git hub blog - hexo</h1><p>1****. 필수 파일 설치****</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">nodejs.org</a> ****다운로드</p>
+<ul>
+<li>설치 시 주의 사항</li>
+</ul>
+<p>  ![Untitled](&#x2F;images&#x2F;2022&#x2F;12&#x2F;Git hub blog&#x2F;Untitled.png)</p>
+<p>  ![Untitled](&#x2F;images&#x2F;2022&#x2F;12&#x2F;Git hub blog&#x2F;Untitled%201.png)
+  </p>
+</li>
+<li><p>git bash에서 확인</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>hexo 설치</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>2****.  블로그 생성****</p>
+<ul>
+<li>적당한 폴더 생성(차례대로 실행)</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> myblog</span><br><span class="line">$ <span class="built_in">cd</span> myblog</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>블로그 파일명 생성(차례대로 실행)</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init myblog</span><br><span class="line">$ <span class="built_in">cd</span> myblog</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>&lt;자신의 닉네임&gt;.github.io 생성</p>
+<p>  ![Untitled](&#x2F;images&#x2F;2022&#x2F;12&#x2F;Git hub blog&#x2F;Untitled%202.png)</p>
+</li>
+<li><p>npm 설치</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br><span class="line">$ npm install hexo-server --save</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>_config.yml 파일 설정</p>
+<ul>
+<li><p>사이트 정보 수정</p>
+</li>
+<li><p>블로그 URL 정보 설정</p>
+<p>  ![Untitled](&#x2F;images&#x2F;2022&#x2F;12&#x2F;Git hub blog&#x2F;Untitled%203.png)</p>
+</li>
+<li><p>깃허브 연동</p>
+</li>
+</ul>
+<p>  ![Untitled](&#x2F;images&#x2F;2022&#x2F;12&#x2F;Git hub blog&#x2F;Untitled%204.png)</p>
+</li>
+</ul>
+<p>2****.  깃허브에 배포****</p>
+<ul>
+<li>차례대로 실행 후 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 에서 접속 확인</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo server</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>최종적으로 배포</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>배포 완료 후 SeungKyu37.github.io에 접속해 확인</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://seungkyu37.github.io/2022/12/21/2022/12/Git%20hub%20blog/" data-id="clbx8w6ne0000d4vbetgdgjc3" data-title="깃허브 블로그 만들기(hexo 이용)" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/" rel="tag">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub-blog/" rel="tag">GitHub blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/12/20/hello-world/" class="article-date">
@@ -360,7 +472,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/4-1-3/" rel="tag">4.1.3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Fight/" rel="tag">Fight</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/" rel="tag">R</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RStudio/" rel="tag">RStudio</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rtools/" rel="tag">Rtools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shocking/" rel="tag">Shocking</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/4-1-3/" rel="tag">4.1.3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Fight/" rel="tag">Fight</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub-blog/" rel="tag">GitHub blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/" rel="tag">R</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RStudio/" rel="tag">RStudio</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rtools/" rel="tag">Rtools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shocking/" rel="tag">Shocking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
     </div>
   </div>
 
@@ -370,7 +482,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/4-1-3/" style="font-size: 10px;">4.1.3</a> <a href="/tags/Fight/" style="font-size: 10px;">Fight</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/R/" style="font-size: 10px;">R</a> <a href="/tags/RStudio/" style="font-size: 10px;">RStudio</a> <a href="/tags/Rtools/" style="font-size: 10px;">Rtools</a> <a href="/tags/Shocking/" style="font-size: 10px;">Shocking</a>
+      <a href="/tags/4-1-3/" style="font-size: 10px;">4.1.3</a> <a href="/tags/Fight/" style="font-size: 10px;">Fight</a> <a href="/tags/Git/" style="font-size: 20px;">Git</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/GitHub-blog/" style="font-size: 10px;">GitHub blog</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/R/" style="font-size: 10px;">R</a> <a href="/tags/RStudio/" style="font-size: 10px;">RStudio</a> <a href="/tags/Rtools/" style="font-size: 10px;">Rtools</a> <a href="/tags/Shocking/" style="font-size: 10px;">Shocking</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
     </div>
   </div>
 
@@ -393,6 +505,10 @@
         
           <li>
             <a href="/2022/12/21/2022/12/java_install/">자바 설치 방법</a>
+          </li>
+        
+          <li>
+            <a href="/2022/12/21/2022/12/Git%20hub%20blog/">깃허브 블로그 만들기(hexo 이용)</a>
           </li>
         
           <li>
