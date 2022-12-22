@@ -1,126 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>R 설치하기 | SeungKyu37</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="R R : https:&#x2F;&#x2F;www.r-project.org&#x2F;   4.1.3버전으로 다운로드     Rstudio : https:&#x2F;&#x2F;posit.co&#x2F;download&#x2F;rstudio-desktop&#x2F;    Rtools : https:&#x2F;&#x2F;cran.r-project.org&#x2F;bin&#x2F;windows&#x2F;Rtools&#x2F;rtools40.html   차례대로 설치 후 RStudio 실">
-<meta property="og:type" content="article">
-<meta property="og:title" content="R 설치하기">
-<meta property="og:url" content="https://seungkyu37.github.io/2022/12/20/2022/12/R_install/index.html">
-<meta property="og:site_name" content="SeungKyu37">
-<meta property="og:description" content="R R : https:&#x2F;&#x2F;www.r-project.org&#x2F;   4.1.3버전으로 다운로드     Rstudio : https:&#x2F;&#x2F;posit.co&#x2F;download&#x2F;rstudio-desktop&#x2F;    Rtools : https:&#x2F;&#x2F;cran.r-project.org&#x2F;bin&#x2F;windows&#x2F;Rtools&#x2F;rtools40.html   차례대로 설치 후 RStudio 실">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled.png">
-<meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%201.png">
-<meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%202.png">
-<meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%203.png">
-<meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%204.png">
-<meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%205.png">
-<meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%206.png">
-<meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%207.png">
-<meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%208.png">
-<meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%209.png">
-<meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%2010.png">
-<meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%2011.png">
-<meta property="article:published_time" content="2022-12-20T03:04:25.000Z">
-<meta property="article:modified_time" content="2022-12-21T05:48:37.006Z">
-<meta property="article:author" content="John Doe">
-<meta property="article:tag" content="R">
-<meta property="article:tag" content="RStudio">
-<meta property="article:tag" content="Rtools">
-<meta property="article:tag" content="4.1.3">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled.png">
-  
-    <link rel="alternate" href="/atom.xml" title="SeungKyu37" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>R 설치하기 - SeungKyu37</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="SeungKyu37"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="SeungKyu37"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="R R : https:&amp;#x2F;&amp;#x2F;www.r-project.org&amp;#x2F;   4.1.3버전으로 다운로드     Rstudio : https:&amp;#x2F;&amp;#x2F;posit.co&amp;#x2F;download&amp;#x2F;rstudio-desktop&amp;#x2F;    Rtools : https:&amp;#x2F;&amp;#x2F;cran.r-project.org&amp;#x2F;bin&amp;#x2F;windows&amp;#x2F;Rtools&amp;#x2F;rtools40.html   차례대로 설치 후 RStudio 실"><meta property="og:type" content="article"><meta property="og:title" content="R 설치하기"><meta property="og:url" content="https://seungkyu37.github.io/2022/12/20/2022/12/R_install/"><meta property="og:site_name" content="SeungKyu37"><meta property="og:description" content="R R : https:&amp;#x2F;&amp;#x2F;www.r-project.org&amp;#x2F;   4.1.3버전으로 다운로드     Rstudio : https:&amp;#x2F;&amp;#x2F;posit.co&amp;#x2F;download&amp;#x2F;rstudio-desktop&amp;#x2F;    Rtools : https:&amp;#x2F;&amp;#x2F;cran.r-project.org&amp;#x2F;bin&amp;#x2F;windows&amp;#x2F;Rtools&amp;#x2F;rtools40.html   차례대로 설치 후 RStudio 실"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled.png"><meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%201.png"><meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%202.png"><meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%203.png"><meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%204.png"><meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%205.png"><meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%206.png"><meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%207.png"><meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%208.png"><meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%209.png"><meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%2010.png"><meta property="og:image" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled%2011.png"><meta property="article:published_time" content="2022-12-20T03:04:25.000Z"><meta property="article:modified_time" content="2022-12-21T05:48:37.006Z"><meta property="article:author" content="John Doe"><meta property="article:tag" content="R"><meta property="article:tag" content="RStudio"><meta property="article:tag" content="Rtools"><meta property="article:tag" content="4.1.3"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://seungkyu37.github.io/images/2022/12/R_install/Untitled.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungkyu37.github.io/2022/12/20/2022/12/R_install/"},"headline":"R 설치하기","image":["https://seungkyu37.github.io/images/2022/12/R_install/Untitled.png","https://seungkyu37.github.io/images/2022/12/R_install/Untitled%201.png","https://seungkyu37.github.io/images/2022/12/R_install/Untitled%202.png","https://seungkyu37.github.io/images/2022/12/R_install/Untitled%203.png","https://seungkyu37.github.io/images/2022/12/R_install/Untitled%204.png","https://seungkyu37.github.io/images/2022/12/R_install/Untitled%205.png","https://seungkyu37.github.io/images/2022/12/R_install/Untitled%206.png","https://seungkyu37.github.io/images/2022/12/R_install/Untitled%207.png","https://seungkyu37.github.io/images/2022/12/R_install/Untitled%208.png","https://seungkyu37.github.io/images/2022/12/R_install/Untitled%209.png","https://seungkyu37.github.io/images/2022/12/R_install/Untitled%2010.png","https://seungkyu37.github.io/images/2022/12/R_install/Untitled%2011.png"],"datePublished":"2022-12-20T03:04:25.000Z","dateModified":"2022-12-21T05:48:37.006Z","author":{"@type":"Person","name":"John Doe"},"publisher":{"@type":"Organization","name":"SeungKyu37","logo":{"@type":"ImageObject"}},"description":"R R : https:&#x2F;&#x2F;www.r-project.org&#x2F;   4.1.3버전으로 다운로드     Rstudio : https:&#x2F;&#x2F;posit.co&#x2F;download&#x2F;rstudio-desktop&#x2F;    Rtools : https:&#x2F;&#x2F;cran.r-project.org&#x2F;bin&#x2F;windows&#x2F;Rtools&#x2F;rtools40.html   차례대로 설치 후 RStudio 실"}</script><link rel="canonical" href="https://seungkyu37.github.io/2022/12/20/2022/12/R_install/"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
 
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">SeungKyu37</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">개발 블로그</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://SeungKyu37.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-2022/12/R_install" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/12/20/2022/12/R_install/" class="article-date">
-  <time class="dt-published" datetime="2022-12-20T03:04:25.000Z" itemprop="datePublished">2022-12-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/R/">R</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      R 설치하기
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="R"><a href="#R" class="headerlink" title="R"></a>R</h1><ul>
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">SeungKyu37</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2022-12-20T03:04:25.000Z" title="2022. 12. 20. 오후 12:04:25">2022-12-20</time></span><span class="level-item">Updated&nbsp;<time dateTime="2022-12-21T05:48:37.006Z" title="2022. 12. 21. 오후 2:48:37">2022-12-21</time></span><span class="level-item"><a class="link-muted" href="/categories/R/">R</a></span></div></div><h1 class="title is-3 is-size-4-mobile">R 설치하기</h1><div class="content"><h1 id="R"><a href="#R" class="headerlink" title="R"></a>R</h1><ul>
 <li><p>R : <a target="_blank" rel="noopener" href="https://www.r-project.org/">https://www.r-project.org/</a></p>
 <p>  4.1.3버전으로 다운로드</p>
 </li>
@@ -166,158 +75,11 @@
 </ul>
 </li>
 </ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://seungkyu37.github.io/2022/12/20/2022/12/R_install/" data-id="clbx8h0770000rgvbfzuwdxz3" data-title="R 설치하기" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/4-1-3/" rel="tag">4.1.3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/R/" rel="tag">R</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RStudio/" rel="tag">RStudio</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Rtools/" rel="tag">Rtools</a></li></ul>
-
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2022/12/20/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2022/12/19/2022/12/test/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">자바 설치 방법</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/Baseball/">Baseball</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/R/">R</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/4-1-3/" rel="tag">4.1.3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Fight/" rel="tag">Fight</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub-blog/" rel="tag">GitHub blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/" rel="tag">R</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RStudio/" rel="tag">RStudio</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rtools/" rel="tag">Rtools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shocking/" rel="tag">Shocking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/post/" rel="tag">post</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/4-1-3/" style="font-size: 10px;">4.1.3</a> <a href="/tags/Fight/" style="font-size: 10px;">Fight</a> <a href="/tags/Git/" style="font-size: 20px;">Git</a> <a href="/tags/GitHub/" style="font-size: 15px;">GitHub</a> <a href="/tags/GitHub-blog/" style="font-size: 15px;">GitHub blog</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/R/" style="font-size: 10px;">R</a> <a href="/tags/RStudio/" style="font-size: 10px;">RStudio</a> <a href="/tags/Rtools/" style="font-size: 10px;">Rtools</a> <a href="/tags/Shocking/" style="font-size: 10px;">Shocking</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/post/" style="font-size: 10px;">post</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/12/21/2022/12/Git_hub_blog_post/">깃허브 블로그 포스트</a>
-          </li>
-        
-          <li>
-            <a href="/2022/12/21/2022/12/java_install/">자바 설치 방법</a>
-          </li>
-        
-          <li>
-            <a href="/2022/12/21/2022/12/Git%20hub%20blog/">깃허브 블로그 만들기(hexo 이용)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/12/20/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2022/12/20/2022/12/R_install/">R 설치하기</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/R/">R</a><a class="link-muted mr-2" rel="tag" href="/tags/RStudio/">RStudio</a><a class="link-muted mr-2" rel="tag" href="/tags/Rtools/">Rtools</a><a class="link-muted mr-2" rel="tag" href="/tags/4-1-3/">4.1.3</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2022/12/20/image/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">이미지 연습용</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2022/12/19/2022/12/test/"><span class="level-item">자바 설치 방법</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">SeungKyu37</a><p class="is-size-7"><span>&copy; 2022 John Doe</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>
